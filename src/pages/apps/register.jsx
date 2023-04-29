@@ -133,7 +133,11 @@ const useStyles = makeStyles((theme) => ({
   textNavigate : {
     color : '#fff',
     zIndex : 3,
+    padding : '12px'
   },
+  active : {
+    borderBottom : '3px solid #fff'
+  }
 
 }));
 
@@ -153,8 +157,8 @@ const Register = () => {
                 </div>
 
                 <div className={classes.navigateSign}>
-                    <a href='/' className={`${classes.textNavigate} ${classes.active}`}>Sign in</a>
-                    <a href='/register' className={classes.textNavigate}>Sign up</a>
+                    <a href='/' className={`${classes.textNavigate}`}>Sign in</a>
+                    <a href='/register' className={`${classes.textNavigate} ${classes.active}`}>Sign up</a>
                 </div>
 
                 <div className={classes.loginSectionMobile}>

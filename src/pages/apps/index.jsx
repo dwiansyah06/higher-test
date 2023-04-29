@@ -216,15 +216,10 @@ const useStyles = makeStyles((theme) => ({
   textNavigate : {
     color : '#fff',
     zIndex : 3,
+    padding : '12px'
   },
   active : {
-    '&::after': {
-        content: '',
-        display: 'block',
-        height: 'px',
-        background : '#000',
-        width : '100%'
-      }
+    borderBottom : '3px solid #fff'
   }
 
 }));
